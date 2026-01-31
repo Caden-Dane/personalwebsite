@@ -74,3 +74,26 @@
 .footer-copy {
   margin: 0;
 }
+
+/* Mobile header fixes */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+  }
+
+  .header-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--space-sm);
+    white-space: nowrap;
+  }
+
+  .header-nav .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+  }
+}
