@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caden Ice — Personal Website</title>
+  <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/styles/layout.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/pages.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="#home" class="header-logo">Caden Ice</a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <section id="home" class="section section-hero" aria-labelledby="hero-heading">
+      <div class="hero-background" aria-hidden="true"></div>
+      <div class="hero-overlay">
+        <h1 id="hero-heading" class="hero-title">Caden Ice</h1>
+        <p class="hero-tagline">Resume-supplement personal site</p>
+        <button type="button" class="button button-primary" id="resume-download-btn" aria-haspopup="dialog" aria-controls="resume-modal">Download Resume</button>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-title">Skills</h2>
+      <div id="skills-container" class="skills-container" role="list"></div>
+      <div id="skill-tooltip" class="skill-tooltip" role="tooltip" aria-hidden="true" hidden>View where I learned this skill</div>
+    </section>
+
+    <section id="experience" class="section section-experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading" class="section-title">Experience</h2>
+      <div id="experience-timeline" class="timeline" role="list"></div>
+    </section>
+
+    <section id="about" class="section section-about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section-title">About</h2>
+      <div class="about-content" id="about-content">
+        <div class="about-row about-row--1">
+          <div class="about-half about-half--image" id="about-image-1" aria-label="About photo 1"></div>
+          <div class="about-half about-half--text" id="about-text-1"></div>
+        </div>
+        <div class="about-row about-row--2">
+          <div class="about-half about-half--text" id="about-text-2"></div>
+          <div class="about-half about-half--image" id="about-image-2" aria-label="About photo 2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="books" class="section section-books" aria-labelledby="books-heading">
+      <h2 id="books-heading" class="section-title">Books</h2>
+      <div id="books-container" class="books-container" role="list"></div>
+    </section>
+
+    <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Contact</h2>
+      <div id="contact-container" class="contact-container" role="list"></div>
+      <p id="contact-invitation" class="contact-invitation"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p class="footer-copy">&copy; <span id="footer-year"></span> Caden Ice</p>
+  </footer>
+
+  <div id="resume-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title" aria-describedby="resume-modal-desc" hidden>
+    <div class="modal-backdrop" id="resume-modal-backdrop"></div>
+    <div class="modal-content">
+      <h3 id="resume-modal-title" class="modal-title">Download Caden Ice's Resume?</h3>
+      <p id="resume-modal-desc" class="modal-desc">Choose Download to open or save the file.</p>
+      <div class="modal-actions">
+        <button type="button" class="button button-primary" id="resume-modal-download">Download</button>
+        <button type="button" class="button button-secondary" id="resume-modal-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="document-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="document-modal-title" hidden>
+    <div class="modal-backdrop" id="document-modal-backdrop"></div>
+    <div class="modal-content">
+      <h3 id="document-modal-title" class="modal-title">Download document?</h3>
+      <p class="modal-desc">Choose Download to open or save the file.</p>
+      <div class="modal-actions">
+        <a id="document-modal-download" class="button button-primary" href="#" download>Download</a>
+        <button type="button" class="button button-secondary" id="document-modal-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/scripts/utils.js"></script>
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
