@@ -1,0 +1,101 @@
+{
+  "categories": [
+    {
+      "id": "technical",
+      "label": "Technical",
+      "order": 1
+    },
+    {
+      "id": "tools",
+      "label": "Tools",
+      "order": 2
+    },
+    {
+      "id": "non-technical",
+      "label": "Non-technical",
+      "order": 3
+    }
+  ],
+  "skills": [
+    {
+      "id": "js",
+      "label": "JavaScript",
+      "categoryId": "technical"
+    },
+    {
+      "id": "html-css",
+      "label": "HTML & CSS",
+      "categoryId": "technical"
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "categoryId": "technical"
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "categoryId": "technical"
+    },
+    {
+      "id": "data-viz",
+      "label": "Data visualization",
+      "categoryId": "technical"
+    },
+    {
+      "id": "git",
+      "label": "Git",
+      "categoryId": "tools"
+    },
+    {
+      "id": "power-bi",
+      "label": "Power BI",
+      "categoryId": "tools"
+    },
+    {
+      "id": "excel",
+      "label": "Excel",
+      "categoryId": "tools"
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "categoryId": "non-technical"
+    },
+    {
+      "id": "problem-solving",
+      "label": "Problem solving",
+      "categoryId": "non-technical"
+    },
+    {
+      "id": "collaboration",
+      "label": "Collaboration",
+      "categoryId": "non-technical"
+    },
+    {
+      "id": "agile-methodologies",
+      "label": "Agile Methodologies",
+      "categoryId": "non-technical"
+    },
+    {
+      "id": "jira",
+      "label": "Jira",
+      "categoryId": "tools"
+    },
+    {
+      "id": "stakeholder-communication",
+      "label": "Stakeholder Communication",
+      "categoryId": "non-technical"
+    },
+    {
+      "id": "api-concepts",
+      "label": "API Concepts (REST)",
+      "categoryId": "technical"
+    },
+    {
+      "id": "dax",
+      "label": "DAX",
+      "categoryId": "technical"
+    }
+  ]
+}

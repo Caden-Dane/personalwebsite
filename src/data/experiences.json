@@ -1,0 +1,72 @@
+{
+  "experiences": [
+    {
+      "id": "exp-1",
+      "period": "May - August 2025",
+      "title": "Software Development Intern",
+      "organization": "Zeal IT Consultants",
+      "description": "Delivered full-stack functionality using Java Spring Boot and Angular, translating business requirements into \nbackend APIs and user-facing components facilitating data flows and intuitive user experience \n• Designed and implemented a bulk formulary upload feature for pharmacy users, validating and persisting drug \ndata in compliance with enterprise schemas \n• Analyzed client needs and existing system constraints to challenge legacy database design assumptions, \nproposing improvements to the schema that increased long-term maintainability \n• Worked within a Scrum team using Jira to refine backlog items, participate in sprint planning and daily standups, \nand deliver features aligned with Product Owner priorities",
+      "skillIds": [
+        "js",
+        "html-css",
+        "sql",
+        "api-concepts",
+        "git",
+        "jira",
+        "communication",
+        "problem-solving",
+        "collaboration",
+        "agile-methodologies",
+        "stakeholder-communication"
+      ],
+      "links": [
+        {
+          "label": "Zeal IT Consultants",
+          "href": "https://www.zealitconsultants.ai/",
+          "type": "website"
+        }
+      ]
+    },
+    {
+      "id": "exp-2",
+      "period": "Fall 2025 - Present",
+      "title": "Product and Project Lead - RideSafe",
+      "organization": "Independent Venture",
+      "description": "• Serve as creator and technical lead for RideSafe, a motorcycle safety application that leverages public crash data, \nexternal APIs, and risk-based routing algorithms to generate risk scores for intersections, road segments, and \nroute options across Texas \n• Position RideSafe as a competitive entry for the SCLC 2026 Competition \n• Lead end-to-end product and technical ownership for RideSafe, defining MVP scope and roadmap by translating \nuser needs and crash-risk research into prioritized features, user stories, acceptance criteria, and a scalable \narchitecture validated through personas and iterative feedback",
+      "skillIds": [
+        "js",
+        "python",
+        "sql",
+        "data-viz",
+        "problem-solving",
+        "collaboration"
+      ],
+      "links": []
+    },
+    {
+      "id": "exp-3",
+      "period": "2022 - 2023",
+      "title": "Off-Campus Student Representative",
+      "organization": "Residents Interhall Congress - University of Arkansas",
+      "description": "• Elected as one of two representatives for ~500 off-campus students, evaluating and advancing ~20 funding \nproposals and allocating a $42K annual budget toward social, wellness, and academic initiatives \n• Supported programs that connected hundreds of students to campus life, balancing engagement goals and \ncommunity impact, with events reaching up to 80 attendees and an estimated 400–1,000 students annually",
+      "skillIds": [
+        "communication",
+        "problem-solving",
+        "collaboration"
+      ],
+      "links": []
+    },
+    {
+      "id": "exp-4",
+      "period": "2021 - 2025",
+      "title": "ToGo Specialist",
+      "organization": "Brinker International",
+      "description": "• Managed high-volume customer interactions in a fast-paced environment.\n• Handled order accuracy, payment processing, and issue resolution.\n• Maintained professional communication with guests during peak hours.\n• Balanced multiple tasks simultaneously while meeting time-sensitive deadlines.\n• Provided consistent customer experience under pressure.",
+      "skillIds": [
+        "communication",
+        "collaboration"
+      ],
+      "links": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "resumeUrl": "/public/cadeniceresume.pdf",
+  "invitation": "I'm open to internships and full-time opportunities. Feel free to reach out.",
+  "entries": [
+    {
+      "id": "email",
+      "label": "Email",
+      "value": "cadenice03@gmail.com",
+      "href": "mailto:cadenice03@gmail.com",
+      "order": 1
+    },
+    {
+      "id": "phone",
+      "label": "Phone",
+      "value": "(972)-839-2624",
+      "href": "tel:+19728392624",
+      "order": 2
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/caden-ice",
+      "href": "https://www.linkedin.com/in/caden-ice/",
+      "order": 3
+    }
+  ]
+}

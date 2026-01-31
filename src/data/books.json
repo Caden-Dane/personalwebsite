@@ -1,0 +1,18 @@
+{
+  "books": [
+    { "id": "b1", "title": "Crucial Conversations", "author": "Patterson, Grenny, McMillan & Switzler", "url": "", "status": "read", "note": "Learn how to handle high‑stakes, emotionally charged conversations with honesty, respect and skill." },
+    { "id": "b2", "title": "Rich Dad Poor Dad", "author": "Robert Kiyosaki", "url": "", "status": "read", "note": "Contrasts two perspectives on money — highlighting how financial education, asset‑building and mindset shape wealth and success." },
+    { "id": "b3", "title": "Start with Why", "author": "Simon Sinek", "url": "", "status": "read", "note": "Explains that leaders and organizations succeed by clearly defining and communicating their core purpose (\"why\") before focusing on the \"how\" and \"what,\" inspiring loyalty and driving action." },
+    { "id": "b4", "title": "Atomic Habits", "author": "James Clear", "url": "", "status": "read", "note": "Revolutionary insights on building good habits and breaking bad ones — this book changed how I approach personal and professional growth." },
+    { "id": "b5", "title": "Influence: Science and Practice", "author": "Robert Cialdini", "url": "", "status": "read", "note": "Explores the psychological principles behind why people say \"yes\" and how to ethically apply them." },
+    { "id": "b6", "title": "Leaders Eat Last", "author": "Simon Sinek", "url": "", "status": "read", "note": "Argues that great leaders prioritize the well-being of their team, creating a culture of trust and safety that inspires loyalty, collaboration, and long-term success." },
+    { "id": "b7", "title": "The Richest Man in Babylon", "author": "George S. Clason", "url": "", "status": "read", "note": "Shares timeless financial wisdom through parables set in ancient Babylon, emphasizing saving consistently, living below your means and investing wisely." },
+    { "id": "b8", "title": "Extreme Ownership", "author": "Jocko Willink & Leif Babin", "url": "", "status": "read", "note": "Leaders must take complete responsibility for everything in their team's performance, owning mistakes and solutions alike to drive success." },
+    { "id": "b9", "title": "How to Win Friends and Influence People", "author": "Dale Carnegie", "url": "", "status": "read", "note": "Practical strategies for building strong relationships, gaining trust and influencing others through genuine interest and respectful communication." },
+    { "id": "b10", "title": "A Trusted Advisor", "author": "Robert M. Galford", "url": "", "status": "read", "note": "Explores how professionals can build deep client relationships by earning trust through credibility, reliability and empathy." },
+    { "id": "b11", "title": "Mindset", "author": "Carol S. Dweck", "url": "", "status": "read", "note": "The power of believing you can improve — this book shaped my approach to learning and facing challenges in tech." },
+    { "id": "b12", "title": "Moonwalking with Einstein", "author": "Joshua Foer", "url": "", "status": "read", "note": "Follows a journalist's journey into the world of competitive memory, revealing how ancient mnemonic techniques can improve cognitive performance." },
+    { "id": "b13", "title": "Think and Grow Rich", "author": "Napoleon Hill", "url": "", "status": "read", "note": "Distills the principles of success into a mindset of desire, faith, persistence and clarity of purpose to turn thoughts into achievement." },
+    { "id": "b14", "title": "User Stories Applied", "author": "Mike Cohn", "url": "", "status": "read", "note": "Explains how to write effective user stories in agile development, enhancing communication and ensuring software delivers real value to users." }
+  ]
+}
