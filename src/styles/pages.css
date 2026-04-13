@@ -144,6 +144,18 @@
   }
 }
 
+.section-projects .projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .section-projects .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .section-books .books-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));

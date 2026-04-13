@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": "ridesafe",
+      "title": "RideSafe",
+      "subtitle": "Motorcycle safety application",
+      "description": "Creator and technical lead for RideSafe, a motorcycle safety app that uses public crash data, external APIs, and risk-based routing to score intersections, road segments, and route options across Texas. Positioned as a competitive entry for the SCLC 2026 Competition.",
+      "tags": ["Product leadership", "Data & APIs", "Risk scoring"]
+    },
+    {
+      "id": "personal-site",
+      "title": "Personal portfolio site",
+      "subtitle": "This website",
+      "description": "A resume-focused personal site with data-driven sections for skills, experience, books, and contact—built for clarity and easy updates.",
+      "tags": ["HTML/CSS", "JavaScript", "Content-driven"]
+    }
+  ]
+}

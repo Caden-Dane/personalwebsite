@@ -25,6 +25,7 @@
   })();
   var skillsData = null;
   var experiencesData = null;
+  var projectsData = null;
   var booksData = null;
   var contactData = null;
   var imagesData = null;
@@ -52,6 +53,7 @@
     return Promise.all([
       Utils.fetchJSON(DATA_BASE + "skills.json" + cacheBust),
       Utils.fetchJSON(DATA_BASE + "experiences.json" + cacheBust),
+      Utils.fetchJSON(DATA_BASE + "projects.json" + cacheBust),
       Utils.fetchJSON(DATA_BASE + "books.json" + cacheBust),
       Utils.fetchJSON(DATA_BASE + "contact.json" + cacheBust),
       Utils.fetchJSON(DATA_BASE + "images.json" + cacheBust),
@@ -59,10 +61,11 @@
     ]).then(function (results) {
       skillsData = results[0];
       experiencesData = results[1];
-      booksData = results[2];
-      contactData = results[3];
-      imagesData = results[4];
-      aboutData = results[5];
+      projectsData = results[2];
+      booksData = results[3];
+      contactData = results[4];
+      imagesData = results[5];
+      aboutData = results[6];
     });
   }
 
@@ -273,6 +276,51 @@
 
       item.appendChild(content);
       timeline.appendChild(item);
+    });
+  }
+
+  function renderProjects() {
+    var container = getEl("projects-container");
+    if (!container || !projectsData) return;
+
+    var projects = projectsData.projects || [];
+    container.innerHTML = "";
+
+    projects.forEach(function (project) {
+      var card = document.createElement("article");
+      card.className = "project-card";
+      card.setAttribute("role", "listitem");
+
+      var title = document.createElement("h3");
+      title.className = "project-card-title";
+      title.textContent = project.title || "";
+      card.appendChild(title);
+
+      if (project.subtitle) {
+        var sub = document.createElement("p");
+        sub.className = "project-card-subtitle";
+        sub.textContent = project.subtitle;
+        card.appendChild(sub);
+      }
+
+      var desc = document.createElement("p");
+      desc.className = "project-card-description";
+      desc.textContent = project.description || "";
+      card.appendChild(desc);
+
+      if (project.tags && project.tags.length > 0) {
+        var tagsWrap = document.createElement("div");
+        tagsWrap.className = "project-card-tags";
+        project.tags.forEach(function (tag) {
+          var span = document.createElement("span");
+          span.className = "project-tag";
+          span.textContent = tag;
+          tagsWrap.appendChild(span);
+        });
+        card.appendChild(tagsWrap);
+      }
+
+      container.appendChild(card);
     });
   }
 
@@ -583,12 +631,66 @@
     });
   }
 
+  /**
+   * Highlight the nav link that matches the section nearest the top of the viewport.
+   */
+  function setupNavScrollSpy() {
+    var links = document.querySelectorAll(".header-nav .nav-link[data-section]");
+    if (!links.length) return;
+
+    var sectionIds = ["home", "skills", "experience", "projects", "about", "books", "contact"];
+
+    function setActive(sectionId) {
+      links.forEach(function (link) {
+        var id = link.getAttribute("data-section");
+        var active = id === sectionId;
+        link.classList.toggle("is-active", active);
+        if (active) link.setAttribute("aria-current", "true");
+        else link.removeAttribute("aria-current");
+      });
+    }
+
+    function updateActiveSection() {
+      var line = window.innerHeight * 0.35;
+      var active = "home";
+      var nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+
+      if (nearBottom) {
+        active = "contact";
+      } else {
+        sectionIds.forEach(function (id) {
+          var el = document.getElementById(id);
+          if (!el) return;
+          var top = el.getBoundingClientRect().top;
+          if (top <= line) active = id;
+        });
+      }
+      setActive(active);
+    }
+
+    var ticking = false;
+    function onScrollOrResize() {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          updateActiveSection();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    window.addEventListener("scroll", onScrollOrResize, { passive: true });
+    window.addEventListener("resize", onScrollOrResize);
+    updateActiveSection();
+  }
+
   function init() {
     setFooterYear();
     loadAllData()
       .then(function () {
         renderSkills();
         renderExperience();
+        renderProjects();
         renderAbout();
         renderBooks();
         renderContact();
@@ -596,6 +698,7 @@
         setupResumeModal();
         setupDocumentModal();
         setupSkillTooltipAndClick();
+        setupNavScrollSpy();
       })
       .catch(function (err) {
         console.error("Failed to load data:", err);
