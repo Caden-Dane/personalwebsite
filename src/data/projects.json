@@ -8,11 +8,11 @@
       "tags": ["Product leadership", "Data & APIs", "Risk scoring"]
     },
     {
-      "id": "personal-site",
-      "title": "Personal portfolio site",
-      "subtitle": "This website",
-      "description": "A resume-focused personal site with data-driven sections for skills, experience, books, and contact—built for clarity and easy updates.",
-      "tags": ["HTML/CSS", "JavaScript", "Content-driven"]
+      "id": "verifly",
+      "title": "Verifly",
+      "subtitle": "Real-time identity verification",
+      "description": "Verifly is a concept for live identity assurance during calls or video: two people join a secure session, one sends a verification challenge (for example a short phrase), and the other confirms it in real time—proving they control the device you are talking to, with optional Face ID or Touch ID. It targets spoofed caller ID and deepfakes by focusing on synchronous trust, not document uploads. Planned direction: Swift/SwiftUI (MVVM) on iOS, challenge-response and session trust scoring, with a lightweight API and Supabase (PostgreSQL) for users, sessions, and verification events.",
+      "tags": ["Swift", "SwiftUI", "Security", "Real-time trust"]
     }
   ]
 }
